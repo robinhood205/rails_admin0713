@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'nokogiri'
 gem 'rack', '~>1.1'
-gem 'rspec', :require => 'spec'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
