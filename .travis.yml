@@ -1,10 +1,9 @@
-# 開発言語
-  language: ruby
-  # Rubyのバージョン。複数指定可能
-  rvm:
-  　- 1.9.2
-  　- 1.9.3
-  # 実行するスクリプト
-  script: 
-     -  rake db:migrate
-     -  rake spec
+language: ruby
+rvm:
+  - 1.9.3
+notifications:
+  email: false
+bundler_args: --deployment
+script:
+  - bundle exec rake db:migrate
+  - bundle exec rake spec
