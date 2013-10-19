@@ -44,4 +44,14 @@ group :test do
   gem 'rspec-rails'
 end
 
-gem "devise"
+gem 'devise'
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+
+
